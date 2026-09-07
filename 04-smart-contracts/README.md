@@ -1,3 +1,3 @@
 # smart contracts
 
-新手內容會逐步補上。先打好 `01-blockchain-basics`。
+- [ERC-20 Transfer 事件（CEX 充幣掃描）](./erc20-transfer-events.md)
