@@ -6,3 +6,5 @@
 - [EIP-2612 Permit](./eip2612-permit.md)
 - [EIP-712 Typed Data](./eip712-typed-data.md)
 - [非標準 ERC-20（FoT／USDT／blacklist）](./erc20-nonstandard-quirks.md)
+- [EIP-1271 智能合約錢包簽名](./eip1271-smart-wallet-sig.md)
+- [可升級 Proxy（UUPS vs Transparent）](./upgradeable-proxy-uups-transparent.md)
