@@ -11,3 +11,4 @@
 - [Multisig + Timelock（CEX Admin）](./multisig-timelock-admin.md)
 - [熱錢包 Sweep／歸集](./hot-wallet-sweep-consolidation.md)
 - [Native ETH vs ERC-20 充值偵測](./native-eth-vs-erc20-deposit.md)
+- [熱錢包 Pending Tx 監控](./hot-wallet-pending-monitor.md)
