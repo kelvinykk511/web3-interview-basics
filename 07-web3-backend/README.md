@@ -3,6 +3,7 @@
 - [CEX 充值到鏈上](./cex-deposit-to-chain.md)
 - [熱／冷錢包](./hot-cold-wallet.md)
 - [提現狀態機](./withdrawal-state-machine.md)
+- [提現 Gas Bump 實務（RBF + feeHistory）](./withdrawal-gas-bump-ops.md)
 - [Bridge 與 Custody](./bridge-and-custody.md)
 - [鏈上索引：自建 vs The Graph](./indexing-the-graph-vs-self.md)
 - [Multicall 批次讀鏈](./multicall-batching.md)
