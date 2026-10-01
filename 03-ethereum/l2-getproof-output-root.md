@@ -27,7 +27,7 @@ A：**未必然。** 本地／腳本對住某 root 重算成功，只證明材�
 A：**唔係同一個名詞。** State root 係某個 L2 block 執行後世界狀態嘅 MPT 根；output root 係協議定義嘅 **打包承諾**（裡面會引用 state root／withdrawal 相關根等），專門畀 L1 錨定同爭議。面試講：「L1 錨嘅係 output／proposal；getProof 對嘅係 trie 相對某 state／message root——兩者透過協議公式接埋。」
 
 **Q：點解要分 prove 同 finalize，唔係一次 tx 搞掂？**  
-A：Optimistic 要留 **爭議窗口**：prove 之後、放錢之前，挑戰者可以針對錯誤 output／欺詐證明攻擊。合成一步會令偷提同糾正搵同一個原子窗口。ZK 路線可以「validity 上鏈後較快提」，但仍然有證明產生同 L1 確認延遲——產品狀態機唔好照抄「一筆 receipt 就 done」。
+A：Optimistic 要留 **爭議窗口**：prove 之後、放錢之前，挑戰者可以針對錯誤 output／欺詐證明攻擊。合成一步會令偷提同糾正搶同一個原子窗口。ZK 路線可以「validity 上鏈後較快提」，但仍然有證明產生同 L1 確認延遲——產品狀態機唔好照抄「一筆 receipt 就 done」。
 
 **Q：CEX 若用官方橋代用戶 prove／claim，風控要盯咩欄位？**  
 A：至少：L2 initiate tx／message nonce、對應 **output index／root**、L1 prove tx、challenge 截止時間、claim tx、同內部是否已墊付。對帳用「output 已 propose 但未 proven」「proven 但窗未完」「窗完未 claim」分桶老化；墊付倉要假設窗內仍可能失敗，唔好一 proven 就當結算完成。
