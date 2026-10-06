@@ -11,3 +11,4 @@
 - [L2 getProof Deep-dive：Prove Path／Output Root](./l2-getproof-output-root.md)
 - [L2 最終性與提款延遲](./l2-finality-and-withdrawal.md)
 - [Access List（EIP-2930）](./access-list-eip2930.md)
+- [eth_getBlockReceipts 批量掃塊](./eth-getblockreceipts-batch-scan.md)
