@@ -15,3 +15,5 @@
 - [熱錢包 Pending Tx 監控](./hot-wallet-pending-monitor.md)
 - [多 RPC 節點 Failover 與一致性](./rpc-multi-node-failover.md)
 - [USDT／USDC Blacklist 對充值／歸集／出金](./stablecoin-blacklist-freeze.md)
+- [Safe 多簽出金流程（大額／冷錢包）](./safe-multisig-withdrawal-flow.md)
+- [KYT／鏈上資金風險篩查](./kyt-onchain-risk-screening.md)
