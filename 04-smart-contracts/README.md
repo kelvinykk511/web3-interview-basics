@@ -12,3 +12,4 @@
 - [可升級 Proxy（UUPS vs Transparent）](./upgradeable-proxy-uups-transparent.md)
 - [ERC-4337 Account Abstraction](./erc4337-account-abstraction.md)
 - [EIP-7702 EOA 委託代碼](./eip7702-eoa-delegation.md)
+- [ERC-4337 vs EIP-7702 對比（CEX 充提）](./erc4337-vs-eip7702.md)
