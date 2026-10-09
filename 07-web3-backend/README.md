@@ -18,3 +18,5 @@
 - [Safe 多簽出金流程（大額／冷錢包）](./safe-multisig-withdrawal-flow.md)
 - [KYT／鏈上資金風險篩查](./kyt-onchain-risk-screening.md)
 - [新幣上架：鏈上盡調 Checklist](./token-listing-onchain-checklist.md)
+- [充值入帳：Reorg、確認數與最終性](./deposit-reorg-confirmation-depth.md)
+- [Event Log 索引陷阱（CEX Scanner）](./event-log-indexing-pitfalls.md)
