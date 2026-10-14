@@ -28,3 +28,5 @@
 - [錯鏈／錯幣充值找回](./wrong-chain-token-recovery.md)
 - [Solana／TRON vs EVM 帳戶模型](./solana-tron-vs-evm-account-model.md)
 - [Solana ATA 充值 + TRON Energy／Bandwidth](./solana-ata-deposit-tron-energy.md)
+- [Solana 出金：blockhash 過期重簽 + priority fee](./solana-withdrawal-blockhash-priority-fee.md)
+- [BTC UTXO 充值／出金 vs 帳戶模型](./btc-utxo-deposit-withdrawal.md)
