@@ -30,3 +30,5 @@
 - [Solana ATA 充值 + TRON Energy／Bandwidth](./solana-ata-deposit-tron-energy.md)
 - [Solana 出金：blockhash 過期重簽 + priority fee](./solana-withdrawal-blockhash-priority-fee.md)
 - [BTC UTXO 充值／出金 vs 帳戶模型](./btc-utxo-deposit-withdrawal.md)
+- [BTC 手續費估算、代付與 fee bump（RBF / CPFP）](./btc-fee-estimation-bump.md)
+- [Solana 充值：commitment 層級、reorg 與 CEX 入帳](./solana-deposit-commitment-reorg.md)
