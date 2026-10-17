@@ -32,3 +32,5 @@
 - [BTC UTXO 充值／出金 vs 帳戶模型](./btc-utxo-deposit-withdrawal.md)
 - [BTC 手續費估算、代付與 fee bump（RBF / CPFP）](./btc-fee-estimation-bump.md)
 - [Solana 充值：commitment 層級、reorg 與 CEX 入帳](./solana-deposit-commitment-reorg.md)
+- [TRON Stake 2.0 — 交易所能量池（質押 + 代理）](./tron-stake2-energy-pool.md)
+- [Solana durable nonce — 慢審批出金](./solana-durable-nonce-withdrawal.md)
