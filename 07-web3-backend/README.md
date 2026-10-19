@@ -36,3 +36,5 @@
 - [Solana durable nonce — 慢審批出金](./solana-durable-nonce-withdrawal.md)
 - [L2 出金手續費報價：L1 data fee（OP Stack vs Arbitrum）](./l2-withdrawal-fee-quote-l1-data-fee.md)
 - [Solana SPL 出金：收款人冇 ATA 點算](./solana-spl-withdrawal-ata-creation.md)
+- [儲備證明 Proof of Reserves（Merkle sum tree）](./proof-of-reserves-merkle-sum-tree.md)
+- [出金地址所有權驗證（自託管錢包 / Travel Rule）](./withdrawal-address-ownership-verification.md)
