@@ -2,6 +2,7 @@
 
 - [CEX 充值到鏈上](./cex-deposit-to-chain.md)
 - [熱／冷錢包](./hot-cold-wallet.md)
+- [熱錢包限額 + 熱冷再平衡（水位）](./hot-wallet-limits-rebalancing.md)
 - [提現狀態機](./withdrawal-state-machine.md)
 - [提現 Gas Bump 實務（RBF + feeHistory）](./withdrawal-gas-bump-ops.md)
 - [Bridge 與 Custody](./bridge-and-custody.md)
@@ -17,6 +18,7 @@
 - [USDT／USDC Blacklist 對充值／歸集／出金](./stablecoin-blacklist-freeze.md)
 - [Safe 多簽出金流程（大額／冷錢包）](./safe-multisig-withdrawal-flow.md)
 - [MPC/TSS 錢包出金簽名（對比 Safe 多簽）](./mpc-tss-withdrawal-signing.md)
+- [MPC 簽名服務 HA + presign 池](./mpc-signing-ha-presign-pool.md)
 - [地址投毒（Address Poisoning）同出金防護](./address-poisoning-withdrawal-defense.md)
 - [KYT／鏈上資金風險篩查](./kyt-onchain-risk-screening.md)
 - [新幣上架：鏈上盡調 Checklist](./token-listing-onchain-checklist.md)
