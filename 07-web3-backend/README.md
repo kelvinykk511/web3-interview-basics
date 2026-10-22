@@ -39,6 +39,8 @@
 - [TRON Stake 2.0 — 交易所能量池（質押 + 代理）](./tron-stake2-energy-pool.md)
 - [Solana durable nonce — 慢審批出金](./solana-durable-nonce-withdrawal.md)
 - [L2 出金手續費報價：L1 data fee（OP Stack vs Arbitrum）](./l2-withdrawal-fee-quote-l1-data-fee.md)
+- [L2 出金真實成本：L1 data fee + blob 費波動](./l2-withdrawal-cost-l1-data-fee.md)
+- [出金手續費定價 + 報價鎖定](./withdrawal-fee-pricing-quote-lock.md)
 - [Solana SPL 出金：收款人冇 ATA 點算](./solana-spl-withdrawal-ata-creation.md)
 - [儲備證明 Proof of Reserves（Merkle sum tree）](./proof-of-reserves-merkle-sum-tree.md)
 - [出金地址所有權驗證（自託管錢包 / Travel Rule）](./withdrawal-address-ownership-verification.md)
