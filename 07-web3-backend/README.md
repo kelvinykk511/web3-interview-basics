@@ -43,4 +43,6 @@
 - [出金手續費定價 + 報價鎖定](./withdrawal-fee-pricing-quote-lock.md)
 - [Solana SPL 出金：收款人冇 ATA 點算](./solana-spl-withdrawal-ata-creation.md)
 - [儲備證明 Proof of Reserves（Merkle sum tree）](./proof-of-reserves-merkle-sum-tree.md)
+- [每日鏈上 vs 帳本資產對帳](./daily-onchain-ledger-reconciliation.md)
+- [TON Jetton（例如 USDT on TON）充值掃描](./ton-jetton-deposit-scanning.md)
 - [出金地址所有權驗證（自託管錢包 / Travel Rule）](./withdrawal-address-ownership-verification.md)
