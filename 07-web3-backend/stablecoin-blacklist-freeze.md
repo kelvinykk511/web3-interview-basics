@@ -1,40 +1,30 @@
-# USDT／USDC Blacklist：對充值、歸集、出金嘅影響
+# 穩定幣發行方黑名單凍結（USDT／USDC）對交易所充提嘅影響
 
-## 人話（從你熟的 CEX）
+## 人話
 
-CEX 自己可以凍結用戶帳戶；鏈上嘅穩定幣**發行方**（Tether、Circle）都可以凍結任何地址——包括你交易所嘅充值地址同熱錢包。被凍結之後，個地址嘅幣喺合約層面郁唔到，你內部帳本話有都冇用。
-
-關鍵細節：**兩隻幣規則唔同**（以 Ethereum 主網合約為例）：
-
-| | USDT（TetherToken） | USDC（FiatToken） |
-|---|---|---|
-| 查詢 | `isBlackListed(addr)` | `isBlacklisted(addr)` |
-| 被凍地址轉出 | revert | revert |
-| **轉入**被凍地址 | **會成功**（錢入咗但郁唔到） | **revert**（收款方都檢查） |
-| 事件 | `AddedBlackList` / `RemovedBlackList` | `Blacklisted` / `UnBlacklisted` |
-| 銷毀 | `destroyBlackFunds` 可清零被凍地址餘額 | 由合約管理員操作，視版本 |
+USDT、USDC 係中心化發行方嘅合約，發行方可以將某個地址拉入黑名單。被拉黑嘅地址啲幣仲喺 `balanceOf` 度見到，但轉唔走；Tether 仲可以 `destroyBlackFunds` 直接燒走。對交易所即係：熱錢包／充值地址一被拉黑，錢會卡死；出金打去黑名單地址，會失敗或者打咗出唔返。
 
 ## 面試短答
 
-- **充值地址被凍**：歸集（sweep）會 revert，燒 gas 又搬唔走。歸集前先 `eth_call` 查 blacklist／模擬 transfer；命中就標 `FROZEN`，**唔好重試／RBF**，轉風控同合規。
-- **熱錢包被凍**：最嚴重——該幣所有出金即刻失敗。防線：分散多個熱錢包、限額、監聽 blacklist 事件（命中自家地址即 P0 告警、暫停該錢包出金）。
-- **出金去被凍用戶地址**：USDC 會 revert（浪費 gas＋失敗單）；USDT 會成功但用戶收到郁唔到嘅錢 → 客訴。兩者都應**出金前預檢**目標地址，命中就拒絕。
-- **對帳**：被凍餘額唔應算入可用資產／儲備證明嘅「可動用」部分；USDT 舊合約 `destroyBlackFunds` 只 emit `DestroyedBlackFunds`、**冇 `Transfer` 事件**，淨靠 Transfer 對帳會漏 → 要定期 `balanceOf` 核對。
+USDC（FiatToken）用 `notBlacklisted` 檢查 `msg.sender`、`from` 同 `to`，所以發送方或收款方喺黑名單都會 revert；USDT 舊合約主要檢查發送方（`isBlackListed[msg.sender]`／`transferFrom` 嘅 `_from`），所以打入黑名單地址可以成功但收咗之後轉唔走。交易所要做三樣：(1) 出金簽名前 `eth_call` `isBlacklisted`／`getBlackListStatus`（加 OFAC／KYT 制裁名單）預檢；(2) 監聽自己地址相關嘅 `AddedBlackList`／`Blacklisted`／`DestroyedBlackFunds` 事件，命中即 P0；(3) 資金分散喺多個地址，唔好一個熱錢包放晒，減少單點被凍嘅損失。
 
 ## 常見追問（連答案）
 
-**Q：點解 blacklist revert 要當「永久失敗」而唔係「可重試」？**  
-A：gas 唔夠、nonce 卡住係暫時問題，加 gas 會好；blacklist 係合約狀態，你加幾多 gas 都會 revert，重試只係燒錢兼塞住 nonce 佇列。錯誤分類要按 revert 原因（或預檢結果）走唔同分支：`FROZEN` → 人工／合規單。
+**Q：`destroyBlackFunds` 對帳點睇？**  
+A：佢會 emit `DestroyedBlackFunds` 但冇 `Transfer` 事件，靠 Transfer 流水對帳會漏，要用 `balanceOf` 快照對帳先捉到差額，再按事件解釋。
 
-**Q：用戶由一個「之後先被凍」嘅地址充值俾你，點算？**  
-A：轉帳當時對方未被凍，合約層面成功，錢已喺你充值地址，**你個地址冇被凍**，歸集正常。問題喺合規：KYT（鏈上資金風險掃描）可能標記來源有問題，要按合規政策 hold 住或者上報，呢個係業務／合規決定，唔係合約限制。
+**Q：用戶充值地址因為收咗黑錢被拉黑點算？**  
+A：該地址資金標記 `frozen`，唔再歸集；用戶帳戶按風控／法務流程凍結；同發行方／執法溝通解凍。帳本上清楚區分「交易所自有資金被凍」同「用戶資金被凍」，前者係損失撥備，後者要睇法務決定。
 
-**Q：點樣及早知道自家地址被凍？**  
-A：訂閱／掃描兩個合約嘅 blacklist 事件，同自家地址庫（充值地址＋熱錢包＋冷錢包）做 match；加上定時批量 `isBlackListed`／`isBlacklisted`（可用 multicall）做兜底，防事件漏掃。
+**Q：點解唔可以淨係靠鏈上 revert 擋？**  
+A：USDC revert 都要付 gas、用咗 nonce、出金單變失敗要退款；USDT 根本唔會 revert，錢直接卡喺對方。預檢平過事後處理。
 
-## 小練習
+**Q：預檢有冇 race？**  
+A：有，簽名到上鏈之間地址可能先被拉黑，所以預檢係減少而唔係消滅；上鏈後仍要睇 receipt status 同事件。
 
-**題：** 夜晚歸集任務報錯：某 USDC 充值地址 sweep 連續 revert，系統自動 RBF 重試咗 6 次。同一時間有用戶申請提 USDT 去一個地址，風控 API 查到該地址已被 Tether blacklist。你點處理兩件事，同埋點改系統？
+## 小練習（題目後即附參考答案）
+
+**題：** USDC 出金已經簽咗廣播，receipt `status=0`（revert，原因係收款地址喺黑名單）。點處理？
 
 **參考答案：**  
-(1) 歸集：即刻停止重試（6 次都係燒 gas）。`eth_call isBlacklisted(addr)` 確認係 USDC 凍結 → 標該地址 USDC 餘額為 `FROZEN`，由可用資產剔除，開合規／風控單（查邊筆充值引起、對應用戶帳戶要唔要凍）。(2) USDT 出金：雖然 USDT 轉入被凍地址會成功，但用戶會收到郁唔到嘅錢 → 拒絕出金並通知用戶／客服，唔好因為「鏈上會成功」就放行。系統改善：歸集同出金前都加 blacklist 預檢（`eth_call`，必要時 multicall 批量）；revert 錯誤分類，blacklist 走永久失敗分支唔 RBF；監聽 `Blacklisted`／`AddedBlackList` 事件對自家地址庫，熱錢包命中即 P0 停該錢包出金；定時 `balanceOf` 對帳兜住冇 Transfer 事件嘅銷毀。
+(1) nonce 已用、gas 已扣，唔使填洞，唔好自動重試（重試只會再 revert）；(2) 出金單標記 `failed`，用戶凍結款退返可用餘額（手續費按政策退／唔退），gas 記成本；(3) 該地址加入內部黑名單／地址簿標記；(4) 根因：預檢冇做或者冇覆蓋 USDC，補上 `isBlacklisted` `eth_call` + 制裁名單篩查；(5) 如果係 USDT 呢種唔 revert 嘅情況，錢已經去咗，只能客服 + 發行方流程，所以預檢更重要。
