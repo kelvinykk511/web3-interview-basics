@@ -49,3 +49,5 @@
 - [每日鏈上 vs 帳本資產對帳](./daily-onchain-ledger-reconciliation.md)
 - [TON Jetton（例如 USDT on TON）充值掃描](./ton-jetton-deposit-scanning.md)
 - [出金地址所有權驗證（自託管錢包 / Travel Rule）](./withdrawal-address-ownership-verification.md)
+- [上新幣技術審核：非標準 ERC-20（fee-on-transfer / rebasing / 唔返 bool / 可升級）](./non-standard-erc20-token-listing.md)
+- [XRP Ledger 充值：Destination Tag + Partial Payment 攻擊](./xrpl-destination-tag-partial-payment.md)
