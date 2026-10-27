@@ -51,3 +51,5 @@
 - [出金地址所有權驗證（自託管錢包 / Travel Rule）](./withdrawal-address-ownership-verification.md)
 - [上新幣技術審核：非標準 ERC-20（fee-on-transfer / rebasing / 唔返 bool / 可升級）](./non-standard-erc20-token-listing.md)
 - [XRP Ledger 充值：Destination Tag + Partial Payment 攻擊](./xrpl-destination-tag-partial-payment.md)
+- [BTC 地址類型 + 出金地址校驗（bech32 vs bech32m / Taproot）](./btc-address-types-bech32m-validation.md)
+- [Cosmos 系充值：memo + IBC denom + relayer 陷阱](./cosmos-memo-ibc-denom-deposit.md)
