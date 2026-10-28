@@ -53,3 +53,5 @@
 - [XRP Ledger 充值：Destination Tag + Partial Payment 攻擊](./xrpl-destination-tag-partial-payment.md)
 - [BTC 地址類型 + 出金地址校驗（bech32 vs bech32m / Taproot）](./btc-address-types-bech32m-validation.md)
 - [Cosmos 系充值：memo + IBC denom + relayer 陷阱](./cosmos-memo-ibc-denom-deposit.md)
+- [ETH 出金到合約地址（Safe/AA/7702）](eth-withdrawal-to-contract-wallet.md)
+- [Polkadot ED + events 掃鏈](polkadot-existential-deposit-events.md)
