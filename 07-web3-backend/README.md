@@ -55,3 +55,5 @@
 - [Cosmos 系充值：memo + IBC denom + relayer 陷阱](./cosmos-memo-ibc-denom-deposit.md)
 - [ETH 出金到合約地址（Safe/AA/7702）](eth-withdrawal-to-contract-wallet.md)
 - [Polkadot ED + events 掃鏈](polkadot-existential-deposit-events.md)
+- [Cardano native token + min-ADA 充值出金](cardano-native-assets-min-ada.md)
+- [Aptos 帳戶 / Fungible Asset / sequence number](aptos-account-fa-sequence-number.md)
