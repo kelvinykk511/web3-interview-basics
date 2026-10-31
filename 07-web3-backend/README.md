@@ -57,3 +57,5 @@
 - [Polkadot ED + events 掃鏈](polkadot-existential-deposit-events.md)
 - [Cardano native token + min-ADA 充值出金](cardano-native-assets-min-ada.md)
 - [Aptos 帳戶 / Fungible Asset / sequence number](aptos-account-fa-sequence-number.md)
+- [Stellar memo / trustline / reserve](stellar-memo-trustline-reserve.md)
+- [NEAR storage deposit / receipts](near-storage-deposit-receipts.md)
