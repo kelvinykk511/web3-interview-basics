@@ -59,3 +59,5 @@
 - [Aptos 帳戶 / Fungible Asset / sequence number](aptos-account-fa-sequence-number.md)
 - [Stellar memo / trustline / reserve](stellar-memo-trustline-reserve.md)
 - [NEAR storage deposit / receipts](near-storage-deposit-receipts.md)
+- [小型 PoW 鏈 51% 攻擊：確認數按攻擊成本定](small-pow-chain-51-attack-confirmations.md)
+- [EVM 兼容鏈接入差異（BSC/Polygon 等）](evm-compatible-chain-integration-differences.md)
