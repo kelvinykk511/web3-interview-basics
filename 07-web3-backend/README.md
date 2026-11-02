@@ -61,3 +61,5 @@
 - [NEAR storage deposit / receipts](near-storage-deposit-receipts.md)
 - [小型 PoW 鏈 51% 攻擊：確認數按攻擊成本定](small-pow-chain-51-attack-confirmations.md)
 - [EVM 兼容鏈接入差異（BSC/Polygon 等）](evm-compatible-chain-integration-differences.md)
+- [代幣合約遷移／換幣（MATIC→POL）](token-contract-migration-swap.md)
+- [空投／分叉幣快照分配](airdrop-fork-snapshot-crediting.md)
