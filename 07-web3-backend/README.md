@@ -63,3 +63,5 @@
 - [EVM 兼容鏈接入差異（BSC/Polygon 等）](evm-compatible-chain-integration-differences.md)
 - [代幣合約遷移／換幣（MATIC→POL）](token-contract-migration-swap.md)
 - [空投／分叉幣快照分配](airdrop-fork-snapshot-crediting.md)
+- [BTC Ordinals／Runes：帶資產嘅 UTXO 唔好亂花](btc-ordinals-runes-deposit-utxo.md)
+- [BTC 粉塵攻擊 + coin selection（effective value）](btc-dust-attack-coin-selection.md)
