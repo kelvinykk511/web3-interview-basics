@@ -65,3 +65,5 @@
 - [空投／分叉幣快照分配](airdrop-fork-snapshot-crediting.md)
 - [BTC Ordinals／Runes：帶資產嘅 UTXO 唔好亂花](btc-ordinals-runes-deposit-utxo.md)
 - [BTC 粉塵攻擊 + coin selection（effective value）](btc-dust-attack-coin-selection.md)
+- [ENS 出金：域名解析後鎖死 0x 地址](ens-withdrawal-address-resolution.md)
+- [ETH 非交易入帳（validator withdrawals / SELFDESTRUCT / fee recipient）](eth-non-tx-balance-changes.md)
