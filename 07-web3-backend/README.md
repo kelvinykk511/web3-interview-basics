@@ -67,3 +67,5 @@
 - [BTC 粉塵攻擊 + coin selection（effective value）](btc-dust-attack-coin-selection.md)
 - [ENS 出金：域名解析後鎖死 0x 地址](ens-withdrawal-address-resolution.md)
 - [ETH 非交易入帳（validator withdrawals / SELFDESTRUCT / fee recipient）](eth-non-tx-balance-changes.md)
+- [Hedera：Account ID + memo 入金、HTS token association、custom fee](hedera-account-id-token-association.md)
+- [Algorand：ASA opt-in、min balance、close-to 漏數、rekey 告警](algorand-opt-in-close-to-rekey.md)
