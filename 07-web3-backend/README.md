@@ -71,3 +71,7 @@
 - [Algorand：ASA opt-in、min balance、close-to 漏數、rekey 告警](algorand-opt-in-close-to-rekey.md)
 - [USDC EIP-3009：transferWithAuthorization / receiveWithAuthorization（gasless 授權轉帳）](usdc-eip3009-authorization-transfer.md)
 - [Travel Rule 出金：VASP 訊息 + 鏈上廣播閘門](travel-rule-withdrawal-vasp.md)
+- [ERC-4337／AA：CEX 充值掃 UserOperation](erc4337-cex-deposit-userop-scan.md)
+- [ERC-4337 Counterfactual：未部署都可收幣嘅充值地址](erc4337-counterfactual-deposit-address.md)
+- [ERC-4337 Paymaster：贊助配額同 CEX onboarding](erc4337-paymaster-sponsorship-quota.md)
+- [ERC-4337 Session key：出金／操作權限邊界](erc4337-session-key-withdrawal-permissions.md)
