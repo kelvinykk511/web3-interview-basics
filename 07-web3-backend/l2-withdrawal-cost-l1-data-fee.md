@@ -1,5 +1,7 @@
 # L2 出金真實成本：L1 data fee + blob 費波動
 
+> 延伸：blob base fee 點樣指數調、BPO 改 target／max、報價熔斷見 [blob-base-fee-bpo-l2-quote.md](./blob-base-fee-bpo-l2-quote.md)。
+
 ## 人話
 
 喺 L2（Arbitrum、Base/OP）出一筆金，你俾嘅 gas 其實分兩份：**L2 執行費**（好平）+ 把呢筆交易數據貼返去 L1 嘅費用（**L1 data fee**）。後者先係大頭，而且跟 L1 blob 市場浮動，同 L2 本身幾忙冇必然關係。

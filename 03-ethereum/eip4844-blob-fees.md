@@ -1,5 +1,7 @@
 # EIP-4844 Blob Fee — 點解 L2 忽然平咗、CEX 要分開兩本帳
 
+> 延伸：blob fee 指數走勢、BPO 調容量、EIP-7918 地板同 L2 出金報價見 [`../07-web3-backend/blob-base-fee-bpo-l2-quote.md`](../07-web3-backend/blob-base-fee-bpo-l2-quote.md)。
+
 ## 人話
 
 以前 L2 把大量交易數據當 **calldata** 寫上 L1，跟普通 execution gas 搶同一條費市場，貴。  

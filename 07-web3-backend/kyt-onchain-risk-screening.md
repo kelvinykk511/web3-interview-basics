@@ -1,6 +1,6 @@
 # KYT／鏈上資金風險篩查（充值同出金）
 
-> 銜接：[USDT／USDC Blacklist](./stablecoin-blacklist-freeze.md) 講「合約層面凍結」；KYT 係 CEX 自己嘅**合規層**決定，同合約冇關係。
+> 銜接：[USDT／USDC Blacklist](./stablecoin-blacklist-freeze.md) 講「合約層面凍結」；KYT 係 CEX 自己嘅**合規層**決定，同合約冇關係。歸因深化（橋／他所得／熱錢包污染）見 [kyt-attribution-hot-wallet-taint.md](./kyt-attribution-hot-wallet-taint.md)。
 
 ## 人話
 KYC 係「認識個客」，**KYT（Know Your Transaction）**係「認識筆錢」：睇呢筆充值嘅來源地址、或者出金嘅目標地址，同制裁名單、混幣器、暗網、被盜資金、詐騙地址有冇關係。CEX 一般接第三方（Chainalysis、Elliptic、TRM 之類），傳 (chain, txHash, address, amount) 入去，攞返風險分數／類別。

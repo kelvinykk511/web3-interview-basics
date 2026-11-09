@@ -7,6 +7,7 @@
 - [debug_trace／callTracer 輕刷](./debug-trace-transaction.md)
 - [debug_traceCall](./debug-trace-call.md)
 - [eth_feeHistory Tip 選型](./eth-fee-history-tip.md)
+- [EIP-4844 Blob Fee](./eip4844-blob-fees.md)
 - [L2 eth_getProof／Withdrawal Proof 入門](./l2-eth-getproof-withdrawal.md)
 - [L2 getProof Deep-dive：Prove Path／Output Root](./l2-getproof-output-root.md)
 - [L2 最終性與提款延遲](./l2-finality-and-withdrawal.md)
