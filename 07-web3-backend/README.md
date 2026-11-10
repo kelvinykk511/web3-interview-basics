@@ -77,3 +77,5 @@
 - [ERC-4337 Counterfactual：未部署都可收幣嘅充值地址](erc4337-counterfactual-deposit-address.md)
 - [ERC-4337 Paymaster：贊助配額同 CEX onboarding](erc4337-paymaster-sponsorship-quota.md)
 - [ERC-4337 Session key：出金／操作權限邊界](erc4337-session-key-withdrawal-permissions.md)
+- [LST 生息代幣：stETH rebase vs wstETH（CEX 入帳／帳本）](lst-rebasing-steth-wsteth.md)
+- [ERC-4626 金庫份額：CEX 上架／理財對帳](erc4626-vault-shares-cex.md)
