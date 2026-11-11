@@ -79,3 +79,5 @@
 - [ERC-4337 Session key：出金／操作權限邊界](erc4337-session-key-withdrawal-permissions.md)
 - [LST 生息代幣：stETH rebase vs wstETH（CEX 入帳／帳本）](lst-rebasing-steth-wsteth.md)
 - [ERC-4626 金庫份額：CEX 上架／理財對帳](erc4626-vault-shares-cex.md)
+- [Solana Token-2022 擴展：CEX 上架／充提](solana-token-2022-extensions-cex.md)
+- [EIP-7002：執行層觸發退出／部分提款（CEX 質押後台）](eip7002-el-triggerable-withdrawals.md)
