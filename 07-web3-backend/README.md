@@ -81,3 +81,5 @@
 - [ERC-4626 金庫份額：CEX 上架／理財對帳](erc4626-vault-shares-cex.md)
 - [Solana Token-2022 擴展：CEX 上架／充提](solana-token-2022-extensions-cex.md)
 - [EIP-7002：執行層觸發退出／部分提款（CEX 質押後台）](eip7002-el-triggerable-withdrawals.md)
+- [LayerZero OFT 跨鏈調撥 vs CCTP](layerzero-oft-vs-cctp-rebalancing.md)
+- [USDT0 全鏈 USDT：上架、充提同金庫調撥](usdt0-omnichain-listing-deposit.md)
