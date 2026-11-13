@@ -83,3 +83,5 @@
 - [EIP-7002：執行層觸發退出／部分提款（CEX 質押後台）](eip7002-el-triggerable-withdrawals.md)
 - [LayerZero OFT 跨鏈調撥 vs CCTP](layerzero-oft-vs-cctp-rebalancing.md)
 - [USDT0 全鏈 USDT：上架、充提同金庫調撥](usdt0-omnichain-listing-deposit.md)
+- [EIP-7251：MaxEB 2048 同 validator consolidation（CEX 質押後台）](eip7251-validator-consolidation.md)
+- [ERC-7683／意圖橋：CEX 充值入帳 vs 金庫調撥](erc7683-intent-bridge-cex.md)

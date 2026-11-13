@@ -6,7 +6,7 @@
 
 ## 面試短答
 
-- 每個 validator 最少 **32 ETH** 先可以激活；**Pectra** 後 **0x02 compounding credentials** 令 **effective balance** 上限去到 **2048 ETH**（**EIP-7251**），可以少開 validator。
+- 每個 validator 最少 **32 ETH** 先可以激活；**Pectra** 後 **0x02 compounding credentials** 令 **effective balance** 上限去到 **2048 ETH**（**EIP-7251**），可以少開 validator。合併流程、0x01→0x02、目標 WC 風控見 [eip7251-validator-consolidation.md](./eip7251-validator-consolidation.md)。
 - **withdrawal credentials** 決定錢退去邊（**0x01／0x02** 指向執行層地址，應為交易所控制嘅冷錢包／合約），設錯好難救。
 - **生命週期**：deposit → 激活隊列 → active → exit 隊列 → withdrawable 延遲（**256 epochs ≈ 27 小時**）→ sweep 自動打款。
 - 本金／獎勵經 **EIP-4895 withdrawals** 打入地址：**冇 tx hash、冇 Transfer event** → 掃 tx 嘅 scanner 會漏，要讀 `block.withdrawals` 或餘額差。

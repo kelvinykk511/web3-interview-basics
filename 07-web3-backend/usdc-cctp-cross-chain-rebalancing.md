@@ -2,7 +2,7 @@
 
 ## 人話
 
-同叫 USDC，Circle 原生發行嘅同橋鎖倉 mint 出嚟嘅 **USDC.e** 係兩隻唔同合約。**CCTP** 係 Circle 官方「燒咗再印」：源鏈 **burn** → Circle **attestation** 簽名 → 目標鏈 **mint**；冇流動性池、冇 wrapped token。
+同叫 USDC，Circle 原生發行嘅同橋鎖倉 mint 出嚟嘅 **USDC.e** 係兩隻唔同合約。**CCTP** 係 Circle 官方「燒咗再印」：源鏈 **burn** → Circle **attestation** 簽名 → 目標鏈 **mint**；冇流動性池、冇 wrapped token。Filler 墊付嘅意圖橋（ERC-7683／Across）唔係同一種擔保，見 [erc7683-intent-bridge-cex.md](./erc7683-intent-bridge-cex.md)。
 
 ## 面試短答
 
