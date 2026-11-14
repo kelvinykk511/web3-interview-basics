@@ -85,3 +85,5 @@
 - [USDT0 全鏈 USDT：上架、充提同金庫調撥](usdt0-omnichain-listing-deposit.md)
 - [EIP-7251：MaxEB 2048 同 validator consolidation（CEX 質押後台）](eip7251-validator-consolidation.md)
 - [ERC-7683／意圖橋：CEX 充值入帳 vs 金庫調撥](erc7683-intent-bridge-cex.md)
+- [Solana Alpenglow 最終性：CEX 充值入帳同掃鏈](solana-alpenglow-finality-cex.md)
+- [EigenLayer 再質押：提取延遲同罰沒（CEX 理財／庫存）](eigenlayer-restaking-withdrawal-slashing.md)

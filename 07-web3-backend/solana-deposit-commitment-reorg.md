@@ -2,6 +2,8 @@
 
 > 銜接：[充值 Reorg／確認數](./deposit-reorg-confirmation-depth.md) 講 EVM 確認數；[L2 充值最終性](./l2-deposit-finality.md) 講 L2 soft/safe/finalized；[Solana 出金 blockhash](./solana-withdrawal-blockhash-priority-fee.md) 講出金側 commitment。今日講 **Solana 冇「12 個 block」——用 processed/confirmed/finalized 綁入帳狀態機**。
 
+> **更新（2026-10-21 起）：** Alpenglow（Votor）已上 mainnet，`confirmed` 同 `finalized` 而家係同一狀態，新入帳路徑用 `finalized`。詳見 [solana-alpenglow-finality-cex.md](./solana-alpenglow-finality-cex.md)。下文保留 TowerBFT 時期嘅分層政策，方便對照舊系統。
+
 ## 人話
 
 CEX 充值本質係：**鏈上見到一筆轉帳 → 內部帳本加錢**。EVM 習慣講「等 N 個確認」；Solana 用 **commitment level** 描述「呢個 slot／signature 有幾穩」。
