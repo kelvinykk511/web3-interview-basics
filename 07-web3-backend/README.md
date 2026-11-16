@@ -87,3 +87,7 @@
 - [ERC-7683／意圖橋：CEX 充值入帳 vs 金庫調撥](erc7683-intent-bridge-cex.md)
 - [Solana Alpenglow 最終性：CEX 充值入帳同掃鏈](solana-alpenglow-finality-cex.md)
 - [EigenLayer 再質押：提取延遲同罰沒（CEX 理財／庫存）](eigenlayer-restaking-withdrawal-slashing.md)
+- [ERC-3643 許可制代幣：RWA 上架同充提](erc3643-permissioned-rwa-listing.md)
+- [Circle Gateway：統一 USDC 餘額同即時出金](circle-gateway-unified-usdc-balance.md)
+- [Base Denim：200ms 出塊同 Flashblocks 退役（CEX 充值掃鏈）](base-denim-200ms-blocks-cex.md)
+- [Chainlink CCIP 2.0：CEX 金庫跨鏈（同 CCTP／OFT 分工）](chainlink-ccip-cex-treasury.md)
