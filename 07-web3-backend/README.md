@@ -93,3 +93,5 @@
 - [Chainlink CCIP 2.0：CEX 金庫跨鏈（同 CCTP／OFT 分工）](chainlink-ccip-cex-treasury.md)
 - [Glamsterdam EIP-8037／8038：狀態 gas 重定價（CEX 出金／轉帳）](glamsterdam-eip8037-8038-state-gas-cex.md)
 - [Ethena USDe／sUSDe：CEX 上架、入帳同庫存](ethena-usde-susde-cex-listing.md)
+- [EIP-7708：ETH 轉帳出 Transfer log（CEX 充值掃鏈）](eip7708-eth-transfer-logs-cex.md)
+- [Sky USDS／sUSDS：CEX 上架、入帳同庫存](sky-usds-susds-cex-listing.md)
