@@ -1,6 +1,6 @@
 # Glamsterdam EIP-8037／8038：狀態 gas 重定價（CEX 出金／轉帳）
 
-> 銜接：合約收款寫死 21000／2300 見 [eth-withdrawal-to-contract-wallet.md](./eth-withdrawal-to-contract-wallet.md)，出金 bump 見 [withdrawal-gas-bump-ops.md](./withdrawal-gas-bump-ops.md)，升級熔斷見 [chain-upgrade-halt-playbook.md](./chain-upgrade-halt-playbook.md)。Blob／L2 數據費係另一條市場，見 [blob-base-fee-bpo-l2-quote.md](./blob-base-fee-bpo-l2-quote.md)。今日講 **Glamsterdam 提案點樣改 L1 狀態 gas**，以及交易所出金 bot 同 ERC-20 `transfer` 會中邊啲招。
+> 銜接：合約收款寫死 21000／2300 見 [eth-withdrawal-to-contract-wallet.md](./eth-withdrawal-to-contract-wallet.md)，出金 bump 見 [withdrawal-gas-bump-ops.md](./withdrawal-gas-bump-ops.md)，升級熔斷見 [chain-upgrade-halt-playbook.md](./chain-upgrade-halt-playbook.md)。Blob／L2 數據費係另一條市場，見 [blob-base-fee-bpo-l2-quote.md](./blob-base-fee-bpo-l2-quote.md)；協議內 PBS（ePBS）見 [eip7732-epbs-cex-inclusion.md](./eip7732-epbs-cex-inclusion.md)。今日講 **Glamsterdam 提案點樣改 L1 狀態 gas**，以及交易所出金 bot 同 ERC-20 `transfer` 會中邊啲招。
 
 官方說明：[EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)、[EIP-8038](https://eips.ethereum.org/EIPS/eip-8038)、[EF 2026-08-24 測試影響](https://blog.ethereum.org/2026/08/24/glamsterdam-repricing-testing)、[EF 2026-11-06 徵集受影響合約](https://blog.ethereum.org/2026/11/06/glamsterdam-8037-8038)、[Hoodi 延期](https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay)。**數字同規格仍可能改，唔好當已定案。**
 

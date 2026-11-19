@@ -1,6 +1,6 @@
 # USDT0 全鏈 USDT：上架、充提同金庫調撥
 
-> 銜接：OFT 機制、eid／guid／DVN、同 CCTP 對比見 [layerzero-oft-vs-cctp-rebalancing.md](./layerzero-oft-vs-cctp-rebalancing.md)。今日落到 **USDT0 呢個產品**：經典 Ethereum USDT、各鏈 USDT0、同 Legacy Mesh 接住嘅 Tron／TON 原生 USDT，係唔同合約、唔同路徑，交易所最容易用 ticker 混帳。
+> 銜接：OFT 機制、eid／guid／DVN、同 CCTP 對比見 [layerzero-oft-vs-cctp-rebalancing.md](./layerzero-oft-vs-cctp-rebalancing.md)。今日落到 **USDT0 呢個產品**：經典 Ethereum USDT、各鏈 USDT0、同 Legacy Mesh 接住嘅 Tron／TON 原生 USDT，係唔同合約、唔同路徑，交易所最容易用 ticker 混帳。Plasma 鏈上架同充提見 [plasma-usdt0-cex-deposit.md](./plasma-usdt0-cex-deposit.md)。
 
 ## 人話（從你熟的 CEX）
 
