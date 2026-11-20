@@ -95,3 +95,7 @@
 - [Ethena USDe／sUSDe：CEX 上架、入帳同庫存](ethena-usde-susde-cex-listing.md)
 - [EIP-7708：ETH 轉帳出 Transfer log（CEX 充值掃鏈）](eip7708-eth-transfer-logs-cex.md)
 - [Sky USDS／sUSDS：CEX 上架、入帳同庫存](sky-usds-susds-cex-listing.md)
+- [EIP-7732：協議內 PBS（ePBS）對 CEX 充提／質押入帳](eip7732-epbs-cex-inclusion.md)
+- [Plasma 鏈 USDT0：CEX 上架同充提](plasma-usdt0-cex-deposit.md)
+- [Hyperliquid：HyperCore vs HyperEVM 對 CEX 上架／充提](hyperliquid-hypercore-vs-hyperevm-cex.md)
+- [Monad：異步執行同最終性對 CEX 充提](monad-async-execution-cex-finality.md)
