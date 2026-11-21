@@ -99,3 +99,5 @@
 - [Plasma 鏈 USDT0：CEX 上架同充提](plasma-usdt0-cex-deposit.md)
 - [Hyperliquid：HyperCore vs HyperEVM 對 CEX 上架／充提](hyperliquid-hypercore-vs-hyperevm-cex.md)
 - [Monad：異步執行同最終性對 CEX 充提](monad-async-execution-cex-finality.md)
+- [MegaETH：迷你塊 vs EVM 塊，對 CEX 充提／上架](megaeth-miniblocks-cex-deposit.md)
+- [Tempo：穩定幣手續費同虛擬充值地址（CEX 上架／充提）](tempo-tip20-virtual-address-cex.md)
