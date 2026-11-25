@@ -107,3 +107,5 @@
 - [Circle Arc：原生 USDC Gas 對 CEX 上架／充提](arc-usdc-native-gas-cex.md)
 - [Ethereum Fast Confirmation Rule（FCR）：`safe` 標籤同 CEX 充值確認](fast-confirmation-rule-cex.md)
 - [Polygon Agglayer v1.0：Unified Bridge 對 CEX 金庫／上架／充提](agglayer-v1-unified-bridge-cex.md)
+- [EIP-7805 FOCIL：包容名單同 CEX 出金審查抵抗](eip7805-focil-cex-inclusion.md)
+- [Robinhood Chain：對 CEX 上架／充提](robinhood-chain-cex-deposit.md)
