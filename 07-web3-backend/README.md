@@ -109,3 +109,5 @@
 - [Polygon Agglayer v1.0：Unified Bridge 對 CEX 金庫／上架／充提](agglayer-v1-unified-bridge-cex.md)
 - [EIP-7805 FOCIL：包容名單同 CEX 出金審查抵抗](eip7805-focil-cex-inclusion.md)
 - [Robinhood Chain：對 CEX 上架／充提](robinhood-chain-cex-deposit.md)
+- [EIP-7917：確定性 proposer lookahead 對 CEX 出金／預確認](eip7917-proposer-lookahead-cex.md)
+- [Ink：Kraken 嘅 OP Stack L2，對 CEX 上架／充提](ink-op-stack-cex-deposit.md)
