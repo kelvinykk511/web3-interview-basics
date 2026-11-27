@@ -111,3 +111,5 @@
 - [Robinhood Chain：對 CEX 上架／充提](robinhood-chain-cex-deposit.md)
 - [EIP-7917：確定性 proposer lookahead 對 CEX 出金／預確認](eip7917-proposer-lookahead-cex.md)
 - [Ink：Kraken 嘅 OP Stack L2，對 CEX 上架／充提](ink-op-stack-cex-deposit.md)
+- [EIP-7825：單筆交易 gas 上限對 CEX 批量出金／歸集](eip7825-tx-gas-limit-cap-cex.md)
+- [World Chain：對 CEX 上架／充提](world-chain-cex-deposit.md)
